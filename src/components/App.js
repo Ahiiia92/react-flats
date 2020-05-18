@@ -14,12 +14,7 @@ class App extends Component {
   render () {
     return (
       <div>
-        Hello, Marou !
-        <div className="right-side">
-        </div>
-        <div className="left-side">
-          <FlatList flats={this.state.flats} />
-        </div>
+        <FlatList flats={this.state.flats} />
       </div>
     );
   }
