@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import FlatList from './Flat_List.js';
+import FlatList from './Flat_List';
 
-import flats from '../../data/flats.js'
+import flats from '../../data/flats.jsx';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      flats: flats
-    }
+    this.state = { flats: flats }
   }
 
   render () {
