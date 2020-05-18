@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
     this.state = {
       flats,
-      selectedFlat: flats[0]
+      selectedFlat: flats[3]
     };
   }
 
@@ -21,8 +21,8 @@ class App extends Component {
     };
   }
 
-  selectFlat = (index) => {
-    this.setState({ selectedFlat: flats[index] });
+  selectFlat = (id) => {
+    this.setState({ selectedFlat: flats[id] });
   }
 
   render () {
@@ -35,10 +35,10 @@ class App extends Component {
          />
         <div className="map-container">
           <GoogleMapReact
-            bootstrapURLKeys={{ key: ENV['GOOGLE_MAPS_KEY'] }}
+            bootstrapURLKeys={{ key: 'AIzaSyAjN0k3yE0g0YKLcsS2Xb_BAGFF8s3PI1Q' }}
             defaultCenter={this.center()}
             defaultZoom={11} >
-            <Marker lat={this.state.selectedFlat.lat} lng={this.state.selectedFlat.lng}/>
+            <Marker lat={this.selectFlat.lat} lng={this.selectFlat.lng}/>
           </GoogleMapReact>
         </div>
       </div>
