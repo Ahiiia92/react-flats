@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import FlatList from './Flat_List';
+// import SimpleMap from './Google_Map_React';
 
-import flats from '../../data/flats.jsx';
+import flats from '../../data/flats';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { flats: flats }
+    this.state = { flats: flats };
   }
 
   render () {
