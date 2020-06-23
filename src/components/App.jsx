@@ -10,7 +10,8 @@ class App extends Component {
     super(props);
     this.state = {
       selectedFlat: flats[0],
-      flats
+      flats,
+      isCardSelected: true
     };
   }
 
