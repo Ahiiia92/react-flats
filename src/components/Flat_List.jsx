@@ -13,6 +13,7 @@ class FlatList extends Component {
           priceCurrency={flat.priceCurrency}
           lat={flat.lat}
           lng={flat.lng}
+          selectFlat={this.props.selectFlat}
         />
       );
     });
